@@ -27,15 +27,42 @@
         </div>
 
         <div class="caixa-imagem">
-            <img src="./img/verdegrande.png" alt="copa starbucks" class="starbucks">
+            <img src="./img/verdegrande.png" alt="copo starbucks" class="starbucks">
         </div>
     </div>
 
     <div class="menu">
-        <img src="./img/verdepequeno.png" class="copo-pequeno">
-        <img src="./img/rosapequeno.png" class="copo-pequeno">
-        <img src="./img/rclaropequeno.png" class="copo-pequeno">
+        <img src="./img/verdepequeno.png" class="copo-pequeno iverde">
+        <img src="./img/rosapequeno.png" class="copo-pequeno irosa">
+        <img src="./img/rclaropequeno.png" class="copo-pequeno irosclaro">
     </div>
+
+    <script>
+
+        let circulo = document.querySelector(".circulo")
+        let imgcopo = document.querySelector(".starbucks")
+        let iverde = document.querySelector(".iverde")
+        let irosa = document.querySelector(".irosa")
+        let irosclaro = document.querySelector(".irosclaro")
+
+
+        irosa.addEventListener("click", () => {
+            imgcopo.src = "./img/rosapequeno.png"
+            circulo.style.background = "#eb7495"
+        })
+
+        iverde.addEventListener("click", () => {
+            imgcopo.src = "./img/verdepequeno.png"
+            circulo.style.background = "#017143"
+        })
+
+        irosclaro.addEventListener("click", () => {
+            imgcopo.src = "./img/rclaropequeno.png"
+            circulo.style.background = "#e9967a"
+        })
+
+    </script>
+
 </body>
 
 </html>
